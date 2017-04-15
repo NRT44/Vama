@@ -684,3 +684,10 @@ display:block;
     background:#fff url(../../app/images/prev.png) no-repeat center center;
     left:-50px; /*10 to show*/
 }
+
+#dreamgallery {
+	position:relative;
+	height : 800px;
+	top: 50px;
+    	padding-bottom: 830px;
+}

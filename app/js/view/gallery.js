@@ -37,8 +37,7 @@ define([
 			// $.find('.hello');
 			$('#dreamgallery').dreamSlider({
 	                    thumbsPerLine:6,
-	                   	easeEffect: 'bounce',
-	                    easeEffect: 'standOut'
+	                   	easeEffect: 'bounce'
 	                });
 		},
 

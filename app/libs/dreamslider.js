@@ -24,7 +24,7 @@
     //template for spinner,navigation controls & empty thumbs filler
     var staticTmpl = {
         loaderTmpl : '<div class="im_loading">'+
-                          '<div class="loader-inner line-scale-pulse-out">'+
+                          '<div class="">'+
                             '<div></div>' +
                             '<div></div>' +
                             '<div></div>' +
