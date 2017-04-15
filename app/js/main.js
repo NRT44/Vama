@@ -11,7 +11,8 @@ require.config({
         marionette: '../libs/marionette/backbone.marionette',
         handlebars: '../libs/hbs/Handlebars',
         bootstrap: '../libs/bootstrap/bootstrap.min',
-        text: '../libs/text/text-master/text'
+        text: '../libs/text/text-master/text',
+        dreamSlider : '../libs/dreamslider'
     },
 
 
@@ -32,6 +33,9 @@ require.config({
         },
         bootstrap: {
             deps: ['jquery']
+        },
+        dreamSlider : {
+            deps: ['jquery']
         }
     }
 
@@ -41,7 +45,9 @@ require([
     'backbone',
     'application',
     'marionette',
-    'bootstrap'
+    'bootstrap',
+    'dreamSlider'
 ], function(Backbone, App, Marionette) {
     'use strict';
+
 });

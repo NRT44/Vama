@@ -1,7 +1,8 @@
 define([
 	'marionette',
-    'view/menu'
-	],function(Marionette,vMenu){
+    'view/menu',
+    'view/gallery'
+	],function(Marionette,vMenu,Vgallery){
 
 
 	var appRoute = {};
@@ -28,6 +29,7 @@ define([
     },
 
     addLoader = function(){
+    	var galleryView = new Vgallery(); 
         var ovrl = document.getElementById("overlay"),
                 prog = document.getElementById("progress"),
                 stat = document.getElementById("progstat"),
@@ -47,6 +49,7 @@ define([
                 setTimeout(function() {
                     ovrl.style.display = "none";
                 }, 1200);
+                galleryView.bindClickonGalleryimg();
             }
             for (var i = 0; i < tot; i++) {
                 var tImg = new Image();
