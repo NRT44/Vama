@@ -404,7 +404,7 @@
             var targetThumb = $imWrapper.children('div').slice(targetIndex, targetIndex + 1);
             var targetOffsetTop = targetThumb.offset().top;
             $('html, body').animate({
-                scrollTop: targetOffsetTop
+                scrollTop: targetOffsetTop -160
             }, 900);
         }
 
